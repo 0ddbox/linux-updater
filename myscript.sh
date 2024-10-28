@@ -10,7 +10,7 @@ fi
 
 if grep -q "Debian" $release_file || grep -q "Ubuntu" $release_file
 then
-    # if host is debian run apt version of command
+    # if host is debian or ubuntu, run apt version of command
     sudo apt update
     sudo apt dist-update
 fi
